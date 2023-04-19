@@ -17,8 +17,8 @@
       text-align: center;
     }
     .welcome {
-      background-color: #f2f2f2;
-      border: 2px solid #ddd;
+      background-color: hsl(0, 0%, 100%);
+      border: 6px solid #8f8e8e;
       padding: 20px;
       text-align: center;
     }
@@ -84,6 +84,64 @@
     .search-bar button[type="submit"]:hover {
       background-color: #218838;
     }
+    .featured-products {
+			margin-top: 50px;
+		}
+		.featured-products h2 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.featured-products ul {
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+		}
+		.featured-products li {
+			margin: 20px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			width: 300px;
+		}
+		.featured-products a {
+			text-decoration: none;
+			color: #333;
+			display: block;
+			padding: 20px;
+		}
+		.featured-products img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		.featured-products h3 {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-size: 18px;
+			text-align: center;
+		}
+		.featured-products p {
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border-radius: 5px;
+			font-size: 16px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+		.btn:hover {
+			background-color: #666;
+		}
   </style>
 </head>
 
@@ -123,35 +181,61 @@
                           
                       </section>
                       <section class="featured-products">
-                          <h2>Featured Products</h2>
-                          <ul>
-                              <li>
-                                  <a href="#">
-                                    <img src="C:\Users\14049\Pictures\airpod.jpg" alt="Airpod Max">
-                                      <h3>Airpod Max Space Gray!</h3>
-                                      <p>$499.99</p>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <img src="C:\Users\14049\Pictures\airpodpro1.jfif" alt="AirPod Pro1">
-                                      <h3>Airpod Pro 1st Generation (Refurbished)</h3>
-                                      <p>$149.99</p>
-                                  </a>
-                              </li>
-                              <li>
-                                  <a href="#">
-                                      <img src="C:\Users\14049\Pictures\airpodpro2.jfif" alt="Airpod Pro2">
-                                      <h3>Airpod Pro 2nd Generation</h3>
-                                      <p>$199.99</p>
-                                  </a>
-                              </li>
-                          </ul>
+                        <h2 class="featured-products__title">Featured Products</h2>
+                        <ul class="featured-products__list">
+                          <li class="featured-products__item">
+                            <a href="#" class="featured-products__link">
+                              <img src="images/airpodwhitemax.jpg" alt="AirPod Max" class="featured-products__image">
+                              <h3 class="featured-products__heading">AirPod Max White!</h3>
+                              <p class="featured-products__price">$499.99</p>
+                              <button class="featured-products__button btn btn-primary">Add to Cart</button>
+                            </a>
+                          </li>
+                          <li class="featured-products__item">
+                            <a href="#" class="featured-products__link">
+                              <img src="images/airpodpro1.jpg" alt="AirPod Pro1" class="featured-products__image">
+                              <h3 class="featured-products__heading">AirPod Pro 1st Generation (Refurbished)</h3>
+                              <p class="featured-products__price">$149.99</p>
+                              <button class="featured-products__button btn btn-primary">Add to Cart</button>
+                            </a>
+                          </li>
+                          <li class="featured-products__item">
+                            <a href="#" class="featured-products__link">
+                              <img src="images/airpod_pro2.jpg" alt="AirPod Pro2" class="featured-products__image">
+                              <h3 class="featured-products__heading">AirPod Pro 2nd Generation</h3>
+                              <p class="featured-products__price">$199.99</p>
+                              <button class="featured-products__button btn btn-primary">Add to Cart</button>
+                            </a>
+                          </li>
+                          <li class="featured-products__item">
+                            <a href="#" class="featured-products__link">
+                              <img src="images/applewatch3.jpg" alt="Apple Watch Series 3" class="featured-products__image">
+                              <h3 class="featured-products__heading">Apple Watch Series 3 (Refurbished)</h3>
+                              <p class="featured-products__price">$99.99</p>
+                              <button class="featured-products__button btn btn-primary">Add to Cart</button>
+                            </a>
+                          </li>
+                          <li class="featured-products__item">
+                            <a href="#" class="featured-products__link">
+                              <img src="images/ipadair.jpg" alt="IPad Air" class="featured-products__image">
+                              <h3 class="featured-products__heading">Ipad Air (2022)</h3>
+                              <p class="featured-products__price">$549.99</p>
+                              <button class="featured-products__button btn btn-primary">Add to Cart</button>
+                            </a>
+                          </li>
+                          <li class="featured-products__item">
+                            <a href="#" class="featured-products__link">
+                              <img src="images/pro14case.jpg" alt="Iphone 14Pro Case" class="featured-products__image">
+                              <h3 class="featured-products__heading">IPhone 14 Pro Case</h3>
+                              <p class="featured-products__price">$9.99</p>
+                              <button class="featured-products__button btn btn-primary">Add to Cart</button>
+                            </a>
+                          </li>
                       </section>
                       <section class="A-Tech Electronics">
                           <h2>A-Tech Electronics</h2>
                           <p>We are a trusted provider of quality electronics and accessories. Learn more about our company and values below.</p>
-                          <a href="#" class="btn btn-secondary">Learn More</a>
+                          <a href="about.html" class="btn btn-secondary">Learn More</a>
                       </section>
                   </main>
               </section>
@@ -172,4 +256,4 @@
       </section>
   </main>
   </body>
-  </html>"        
+  </html>
