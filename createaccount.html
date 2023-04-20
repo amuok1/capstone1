@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Create Account Page</title>
@@ -127,8 +127,8 @@
     <div class="create-account-form">
       <h1>Create Account</h1>
       <form method="POST" action="submit-form.php">
-        <label for="Username">Username:</label>
-        <input type="text" id="user-name" name="user-name" required>
+        <label for="username-input">Username:</label>
+        <input type="text" id="username-input" name="username" required>
         
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required>
@@ -138,7 +138,8 @@
 
 <label for="confirm-password">Confirm Password:</label>
 <input type="text" id="confirm-password" name="confirm-password" required>
-<label for="how-hear">How did you hear about us?</label>
+<input type="text" id="how-hear-input">
+<label for="how-hear-input">How did you hear about us?</label>
 <div>
   <input type="radio" id="search-engine" name="how-hear" value="search-engine">
   <label for="search-engine">Search Engine</label>
